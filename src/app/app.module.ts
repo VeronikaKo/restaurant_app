@@ -8,6 +8,9 @@ import { AboutComponent } from './about/about.component';
 import { ChoosetableComponent } from './choosetable/choosetable.component';
 import { BookingComponent } from './booking/booking.component';
 import { TableComponent } from './table/table.component';
+import { AdminBookingComponent } from './admin-booking/admin-booking.component';
+import { AdminOrdersComponent } from './admin-orders/admin-orders.component';
+import { SignInComponent } from './sign-in/sign-in.component';
 
 
 
@@ -22,6 +25,9 @@ import { TableComponent } from './table/table.component';
     ChoosetableComponent,
     BookingComponent,
     TableComponent,
+    AdminOrdersComponent,
+    SignInComponent,
+    
    
     
   ],

@@ -8,6 +8,7 @@ $text-size: 1.3em;
 $empty-space: 100px;
 $page-margin: 0 20px;
 
+
 @mixin text-style(){
     font-family: $font-family;
     font-size: $text-size;
@@ -22,7 +23,6 @@ $page-margin: 0 20px;
     }
 }
 body{
-    // margin: 0 50px !important;
     background-color: #494648 !important;
 }
 .row {
@@ -44,25 +44,35 @@ body{
 .inforow {
     height: 200px;
     width: 100%;
-    background-color: #fff;
+    background-color: $link;
     margin: 0 auto
 }
 
 .menuButton {
-    float: left;
-    display: inline;
-    width: 150px;
-    height: 70px;
     border: none;
-    color: #fff;
+    color: $link;
     margin: 10px; 
     margin-left: 0px;
     background-color: $blue;
-    box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.6)
+    box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.6);
+    float: left;
+    padding: 20px 5%;
 }
-
+.menuButtonRigth {
+    border: 1px solid #fff;
+    color: $link;
+    margin: 10px 0; 
+    margin-left: 0px;
+    background-color: transparent;
+    //box-shadow: 7px 7px 20px 0px rgba(0, 0, 0, 0.6);
+    float: right;
+    padding: 20px 5%;
+}
+.AboutHeading {
+    text-align: right !important;
+}
 .headerbutton {
-    color: #fff !important;
+    color: $link !important;
     margin: 0 20px 0 60px;
     width: 100px;
     height: 50px;
@@ -71,7 +81,7 @@ body{
 }
 .w3-button.w3-amber:hover {
     color: #31527f !important;
-    background-color: #fff !important;
+    background-color: $link !important;
     border: 2px solid #31527f;
     font-weight: 400 !important;
 }
@@ -98,18 +108,18 @@ body{
     font-family:'Merriweather';
     text-align: center;
     /* color: #2b292a; */
-    color:#fff;
+    color:$link;
 }
 .circle p {
     font-size: 40px;
     font-weight: 600;
     font-family:'Merriweather';
     margin: 40px;
-    border: 1px solid #fff;
+    border: 1px solid $link;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    color: #fff;
+    color: $link;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,11 +127,16 @@ body{
 }
 
 .circle:hover p{
-    color: #fff;
+    color: $link;
     background-color: #142949;
     border-color: #142949;
     cursor: pointer;
     transform: scale(1.2);
+}
+
+*, ::after, ::before {
+    text-align: center !important;
+    color: white;
 }
 
 .menu-position  {
@@ -153,10 +168,10 @@ body{
 }
 .OrderButton a {
     text-decoration: none;
-    color:#fff;
+    color:$link;
 }
 .OrderButton:hover {
-    color:#fff;
+    color:$link;
     background-color: #31527f; 
     border-color: #496993;
     box-shadow: none;
@@ -171,11 +186,12 @@ body{
 }
 
 .aboutSection p, h1 {
-    text-align: justify;
-    color: #fff !important;
+    text-align: justify !important;
+    color: $link !important;
 }
 .photoTwo img {
     margin-left: -10%;
+    
 }
 h1 {
     text-transform: uppercase;
@@ -197,15 +213,26 @@ h1 {
 .ButtonOrder {
     padding: 10px 15px;
     border: 1px solid;
+    float: right;
 }
-.uk-grid-small {
-    margin-left: -10px !important;
-    padding-bottom: 20px;
+
+.uk-grid-small.uk-grid {
+     margin-top: 20px;
+}
+
+.uk-grid-small > * {
+    padding-left: 10%;
+}
+.dish-description p {
+    text-align: left !important;
+    // width: 76%;
+    float: right;
+    padding-left: 2%;
 }
 /*Choose the table-page */ 
     h1,h3 {
         text-align: center;
-        color: #fff !important;
+        color: $link !important;
     }
 
 /* Main page */
@@ -241,10 +268,15 @@ h1 {
     box-shadow: 2px 20px 10px 0px rgba(0,0,0,0.5);
 }
 
+.dataPicker {
+    margin-top: 5px;
+    width: 100%;
+    height: 39px;
+}
 
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "~bootstrap/dist/css/bootstrap.min.css";
 
-@import "../node_modules/uikit/src/scss/variables-theme.scss";
-@import "../node_modules/uikit/src/scss/mixins-theme.scss";
-@import "../node_modules/uikit/src/scss/uikit-theme.scss";
+// @import "../node_modules/uikit/src/scss/variables-theme.scss";
+// @import "../node_modules/uikit/src/scss/mixins-theme.scss";
+// @import "../node_modules/uikit/src/scss/uikit-theme.scss";

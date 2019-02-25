@@ -4,11 +4,15 @@ import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { BookingComponent } from './booking/booking.component';
 import { ChoosetableComponent } from './choosetable/choosetable.component'
+import { AdminBookingComponent } from './admin-booking/admin-booking.component';
+
 const routes: Routes = [
   { path: 'menu', component: MenuComponent},
   { path: 'about', component: AboutComponent},
   { path: 'booking', component: BookingComponent},
-  { path: 'choosetable', component: ChoosetableComponent}
+  { path: 'choosetable', component: ChoosetableComponent},
+  
+
 ];
 
 @NgModule({

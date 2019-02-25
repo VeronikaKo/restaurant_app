@@ -22,7 +22,7 @@
                              sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div class="containerMenu">
-                        <button class="menuButton">Reservation</button>
+                        <button class="menuButton">Check the menu</button>
                     </div> 
         </div>
         <div class="col-lg-7">
@@ -36,13 +36,13 @@
     <div class="row">
             <div class="col-lg-7">
                     <div class="photoTwo">
-                        <img src="photo4.jpg">       
+                        <img src="E:\Nika\VisualCode\photo4.jpeg">       
                     </div>
             </div>
  
             <div class="col-lg-5">
                     <div class="aboutSection">
-                            <h1>About Us</h1>
+                            <h1 class="AboutHeading">About Us</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi 
@@ -52,89 +52,8 @@
                                  sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
                         <div class="containerMenu">
-                            <button class="menuButton rigth">Contact</button>
+                            <button class="menuButtonRigth">Make a reservation</button>
                         </div> 
             </div>
         </div>
-        
-
-<!-- <div ng-controller="SpicyController">
-    <input ng-model="customSpice">
-    <button ng-click="spicy('chili')">Chili</button>
-    <button ng-click="spicy(customSpice)">Custom spice</button>
-    <p>The food is {{spice}} spicy!</p>
-   </div>
-   
-   
-        <script>
-            
-
-var myApp = angular.module('spicyApp2', []);
-
-myApp.controller('SpicyController', ['$scope', function($scope) {
-    $scope.customSpice = 'wasabi';
-    $scope.spice = 'very';
-
-    $scope.spicy = function(spice) {
-        $scope.spice = spice;
-    };
-    console.log("vghdv");
-}]);
-
-
-        </script> -->
-        <div ng-app="myApp" ng-controller="myCtrl">
-
-                First Name: <input type="text" #firstNameInput><br>
-                Last Name: <input type="text" #lastNameInput ><br>
-                <br>
-                <button (click)="onSubmit()">Submit</button>
-                Full Name: {{result}}
-                
-                </div>
-                
-                
-        <form onsubmit="return guardarNumeros()">
-            <p>Podaj elementy listy</p>
-            <input type="text" value="" id="box">
-            <input type="submit" value="Submit">
-           </form>
-           
-           
-           <script>
-           
-
-           var app = angular.module('myApp', []);
-                app.controller('myCtrl', function($scope) {
-                    $scope.firstName = "";
-                    $scope.lastName = "";
-                });
-           
-            var items = [];
-           
-           function guardarNumeros() {
-           
-            boxvalue = document.getElementById('box').value;
-            items.push(boxvalue);  
-            //console.log(items);
-            document.getElementById("wynik").innerHTML = items;
-            return false;
-           }
-           
-           
-           </script>
-        <div ng-app="myApp" ng-controller="myCtrl">
-
-        <h1 ng-mousemove="count = count + 1">Mouse Over Me!</h1>
-        
-        <h2>{{ count }}</h2>
-        
-        </div>
-        <script>
-        var app = angular.module('myApp', []);
-        app.controller('myCtrl', function($scope) {
-            $scope.count = 0;
-        });
-        </script> 
-
         <app-footer></app-footer>

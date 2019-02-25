@@ -4,50 +4,67 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.25/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.26/js/uikit-icons.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 
 
 </head>
 <div class="small-empty-space"></div>
-
-    
-
 <div class="row">
-
-   
+    <div class="col-lg-6">
     <form class="uk-grid-small" uk-grid>
+        <div class="uk-width-1-2@s">
+            <input class="uk-input" type="text" placeholder="First Name">
+        </div>
+        <div class="uk-width-1-2@s">
+                <input class="uk-input" type="text" placeholder="Last Name">
+            </div>
         <div class="uk-width-1-1">
-            <input class="uk-input" type="text" placeholder="100">
-        </div>
-        <div class="uk-width-1-2@s">
-            <input class="uk-input" type="text" placeholder="50">
+            <input class="uk-input" type="text" placeholder="E-mail">
         </div>
         <div class="uk-width-1-4@s">
-            <input class="uk-input" type="text" placeholder="25">
+            <input type="text" class="dataPicker" data-uk-datepicker="{format:'DD.MM.YYYY'}">
         </div>
         <div class="uk-width-1-4@s">
-            <input class="uk-input" type="text" placeholder="25">
+                <select class="uk-select" type="text" placeholder="Table">
+                        <option>Time</option>
+                        <option>12:00</option>
+                        <option>13:00</option>
+                        <option>14:00</option>
+                        <option>15:00</option>
+                        <option>16:00</option>
+                        <option>17:00</option>
+                        <option>18:00</option>
+                        <option>19:00</option>
+                        <option>20:00</option>
+                </select>
         </div>
-        <div class="uk-width-1-2@s">
-            <input class="uk-input" type="text" placeholder="50">
+        <div class="uk-width-1-4@s">
+                <select class="uk-select" type="text" placeholder="Table">
+                        <option>Table</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                </select>
         </div>
-        <div class="uk-width-1-2@s">
-            <input class="uk-input" type="text" placeholder="50">
+        <div class="uk-width-1-4@s">
+            <input class="uk-input" type="text" placeholder="People">
         </div>
     </form>
-
-</div>
-     
-
-
-<div class="row">
-<div class="col-lg-6">
-    <div uk-tooltip="title: Hello World">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/fs/0cb91d41317115.57adda819f6cc.jpg">
+    </div>
+    <div class="col-lg-6">
+        <img src="C:\Users\Nika\Desktop\photo dyplom\mainphoto.jpg">
     </div>
 </div>
-</div>
-
 <div class="small-empty-space"></div>
 <app-footer></app-footer>
 
